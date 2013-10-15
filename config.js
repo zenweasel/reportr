@@ -5,13 +5,13 @@ module.exports =  {
 	/* Server configuration */
 	"web": {
 		/* (string) Hostname for the application */
-		"host": process.env.HOST || "www.reportr.io",
+		"host": process.env.HOST || "localhost",
 
 		/* (boolean) Secure https mode */
 		"secure": false,
 
 		/* (int) TCP server port */
-		"port": process.env.PORT || 5000,
+		"port": process.env.PORT || 7000,
 
 		/* (string) Session secret */
 		"sessionSecret": process.env.SESSION_SECRET || "sessionSecret",
@@ -58,8 +58,8 @@ module.exports =  {
 			'module': './trackers/github',
 			'config': {
 				'interval': 6*60*60,
-				'clientId': process.env.GITHUB_CLIENTID,
-				'clientSecret': process.env.GITHUB_CLIENTSECRET
+				'clientId': process.env.9d22c0ce6e6d1dd45e6d,
+				'clientSecret': process.env.bcd7ad00b79b97f26b3d1231bd7498d2ba9e5212
 			}
 		},
 		{
