@@ -58,8 +58,8 @@ module.exports =  {
 			'module': './trackers/github',
 			'config': {
 				'interval': 6*60*60,
-				'clientId': process.env.9d22c0ce6e6d1dd45e6d,
-				'clientSecret': process.env.bcd7ad00b79b97f26b3d1231bd7498d2ba9e5212
+				'clientId': process.env.GITHUB_CLIENTID,
+				'clientSecret': process.env.GITHUB_CLIENTSECRET
 			}
 		},
 		{
