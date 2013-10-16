@@ -25527,7 +25527,11 @@ Logger, Requests, Urls, Storage, Cache, Template, Resources, Deferred, Queue, I1
         }
     }
 });
+<<<<<<< HEAD
 define('hr/args',[],function() { return {"map":{"apiKey":"AIzaSyAAeM47baWKdmKoqWeIuK5bQCxtur6mWm0"},"revision":1384102473833,"baseUrl":"/"}; });
+=======
+define('hr/args',[],function() { return {"map":{},"revision":1381927710232,"baseUrl":"/"}; });
+>>>>>>> Add chrome extension to new architecture
 //! moment.js
 //! version : 2.2.1
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
