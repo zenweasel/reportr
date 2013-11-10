@@ -11,7 +11,7 @@
 
             "tracker.chrome", "tracker.facebook",
             "tracker.twitter", "tracker.github", "tracker.runkeeper", 
-            "tracker.fitbit", "tracker.ping"
+            "tracker.fitbit", "tracker.ping", "tracker.whereami"
         ]
     }
 }

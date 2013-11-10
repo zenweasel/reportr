@@ -15,7 +15,6 @@ var modulesSection = {
         "./queue",
         "./notifications",
         "./tasks",
-        
         "./trackers",
         "./tracker.chrome",
         "./tracker.facebook",
@@ -24,7 +23,7 @@ var modulesSection = {
         "./tracker.runkeeper",
         "./tracker.fitbit",
         "./tracker.ping",
-
+        "./tracker.whereami",
         "./model.user",
         "./model.event",
         "./model.eventmodel",
