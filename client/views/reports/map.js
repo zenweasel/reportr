@@ -24,7 +24,7 @@ define([
             'limit': 100,
             'lat': 51.508742,
             'lng': -0.120850,
-            'zoom': 2,
+            'zoom': 15,
             'lines': true,
             'markers': true
         },
