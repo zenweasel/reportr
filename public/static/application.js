@@ -25527,11 +25527,7 @@ Logger, Requests, Urls, Storage, Cache, Template, Resources, Deferred, Queue, I1
         }
     }
 });
-<<<<<<< HEAD
-define('hr/args',[],function() { return {"map":{"apiKey":"AIzaSyAAeM47baWKdmKoqWeIuK5bQCxtur6mWm0"},"revision":1384102473833,"baseUrl":"/"}; });
-=======
-define('hr/args',[],function() { return {"map":{},"revision":1381927710232,"baseUrl":"/"}; });
->>>>>>> Add chrome extension to new architecture
+define('hr/args',[],function() { return {"map":{"apiKey":"AIzaSyAAeM47baWKdmKoqWeIuK5bQCxtur6mWm0"},"revision":1384100322641,"baseUrl":"/"}; });
 //! moment.js
 //! version : 2.2.1
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -29591,6 +29587,18 @@ define('models/user',[
                 console.log("fail gettings settings");
                 that.logout();
             });
+        },
+
+        /*
+         *  Get tracker state
+         */
+        trackerState: function(tId) {
+            return _.reduce(this.get("trackers", []), function(memo, tracker) {
+                if (tracker.id == tId) {
+                    memo = tracker.active;
+                }
+                return memo
+            }, null);
         },
 
         /*
@@ -34701,7 +34709,7 @@ define('views/reports',[
          */
         actionInstallChrome: function(e) {
             e.preventDefault();
-            if (window.chrome == null) return;
+            if (window.chrome == null || User.current.trackerState("chrome")) return;
             chrome.webstore.install(undefined, _.bind(this.render, this), function() {
                 window.open('https://chrome.google.com/webstore/detail/pignkdodidfdfpmocgffojoihgnnldko','_blank');
             });
@@ -34772,7 +34780,9 @@ require([
         template: "main.html",
         metas: {
             "description": "Track your life activity on a single platform.",
-            "viewport": "width=device-width, initial-scale=1.0"
+            "viewport": "width=device-width, initial-scale=1, user-scalable=no",
+            "apple-mobile-web-app-capable": "yes",
+            "apple-mobile-web-app-status-bar-style": "black"
         },
         links: {
             "icon": hr.Urls.static("images/favicon.png"),
@@ -34924,7 +34934,7 @@ require([
             if (e != null) {
                 e.preventDefault();
             }
-            this.components.reports.toggleSettings(true);
+            this.components.reports.toggleSettings();
         },
 
         /*
