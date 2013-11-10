@@ -1259,7 +1259,6 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 @media (max-width:768px){#homepage #features article{min-height:50px;}#homepage #features article .icon{width:25px;height:30px;font-size:20px;line-height:25px;} #homepage #features article h3{font-size:20px;} #homepage #features article p{font-size:14px;}}#homepage #features article.tracker-twitter .icon{color:#4099FF;}
 #homepage #features article.tracker-facebook .icon{color:#335795;}
 #homepage #features article.tracker-github .icon{color:#AE4A54;}
-#homepage #features article.tracker-foursquare .icon{color:#A8CB17;}
 #homepage #features article.tracker-home .icon{color:#FAAA00;}
 #homepage #features article.tracker-fitness .icon{color:#e74c3c;}
 #homepage #preview{max-width:1170px;margin:0px auto;margin-bottom:-120px;margin-top:30px;}#homepage #preview img{width:100%;}

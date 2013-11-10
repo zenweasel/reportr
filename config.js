@@ -46,14 +46,14 @@ module.exports =  {
 			'module': './trackers/chrome',
 			'config': {}
 		},
-		{
-			'module': './trackers/facebook',
-			'config': {
-				'interval': 6*60*60,
-				'clientId': process.env.FACEBOOK_CLIENTID,
-				'clientSecret': process.env.FACEBOOK_CLIENTSECRET
-			}
-		},
+//		{
+//			'module': './trackers/facebook',
+//			'config': {
+//				'interval': 6*60*60,
+//				'clientId': process.env.FACEBOOK_CLIENTID,
+//				'clientSecret': process.env.FACEBOOK_CLIENTSECRET
+//			}
+//		},
 		{
 			'module': './trackers/twitter',
 			'config': {
@@ -61,14 +61,7 @@ module.exports =  {
 				'clientId': process.env.TWITTER_CLIENTID,
 				'clientSecret': process.env.TWITTER_CLIENTSECRET
 			}
-		},
-		{
-			'module': './trackers/foursquare',
-			'config': {
-				'interval': 6*60*60,
-				'clientId': process.env.FOURSQUARE_CLIENTID,
-				'clientSecret': process.env.FOURSQUARE_CLIENTSECRET
-			}
+
 		},
 		{
 			'module': './trackers/github',

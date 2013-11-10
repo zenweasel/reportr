@@ -19,7 +19,6 @@ var modulesSection = {
         "./trackers",
         "./tracker.chrome",
         "./tracker.facebook",
-        "./tracker.foursquare",
         "./tracker.twitter",
         "./tracker.github",
         "./tracker.runkeeper",
